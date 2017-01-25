@@ -16,7 +16,7 @@ class View_Own_Posts_Media_Only_Patch extends View_Own_Posts_Media_Only
 {
     /**
      * @override
-     * On the origina class is private, and for some reason that triggers a fatal error.
+     * On the original class is private, so I can not access to that attribute. I need to create it again.
      */
     protected $lib = null;
     
@@ -28,6 +28,10 @@ class View_Own_Posts_Media_Only_Patch extends View_Own_Posts_Media_Only
         # I18n (Loads text-domain) or the translations
         add_action('plugins_loaded', 
             array(&$this, 'load_text_domain') );
+
+        # Instantiate again the attribute, to not be null.
+        # I just copy and paste for the original
+        $this->lib = new View_Own_Post_Media_Only_Library('view_own_post_media_only');
     }
 
     /**
