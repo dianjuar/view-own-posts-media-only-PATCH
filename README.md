@@ -16,5 +16,7 @@ This plugin is depended of the View Own Posts Media Only
 **Awesome!**
 
 You can do it by:
+
 1. Submitting an issue, or
+
 2. Cloning this repo, **making a branch** for your improvement and making a pull request.
