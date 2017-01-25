@@ -26,7 +26,7 @@ class View_Own_Posts_Media_Only_Patch extends View_Own_Posts_Media_Only
         parent::__construct();
         
         # I18n (Loads text-domain) or the translations
-        add_action('plugins_loaded', 
+        add_action('init', 
             array(&$this, 'load_text_domain') );
 
         # Instantiate again the attribute, to not be null.
@@ -39,7 +39,9 @@ class View_Own_Posts_Media_Only_Patch extends View_Own_Posts_Media_Only
      */
     public function load_text_domain() 
     {
-        load_plugin_textdomain( VOPMO_PATCH, false, VOPMO_PATCH_PLUGIN_DIRNAME . '/languages' );
+        $can_load = load_plugin_textdomain( VOPMO_PATCH, false, VOPMO_PATCH_PLUGIN_DIRNAME . '/languages' );
+
+        // var_dump( $can_load ); die;
     }
 
     /**
