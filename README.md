@@ -9,3 +9,12 @@ This plugin fix that problem.
 Just install the original plugin with this one and activate both of them.
 
 This plugin is depended of the View Own Posts Media Only
+
+
+# Want to Contribute
+
+**Awesome!**
+
+You can do it by:
+1. Submitting an issue, or
+2. Cloning this repo, **making a branch** for your improvement and making a pull request.
