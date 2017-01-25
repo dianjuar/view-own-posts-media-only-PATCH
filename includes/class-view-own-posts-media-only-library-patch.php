@@ -4,9 +4,7 @@
 if( !class_exists('View_Own_Posts_Media_Only_Patch') )
 {
 
-
 require_once( WP_PLUGIN_DIR . '/view-own-posts-media-only/view-own-posts-media-only.php' );
-
 /**
 * Class to put a patch to the problem with the custom roles on the plugin 'View own posts and media library items only'
 *
@@ -82,15 +80,3 @@ class View_Own_Posts_Media_Only_Patch extends View_Own_Posts_Media_Only
 
     $view_own_posts_media_only_patch = new View_Own_Posts_Media_Only_Patch();
 }
-
-
-/**
- <?php
-
-if( is_plugin_active($plugin) ||
-     )
-
-require_once( WP_PLUGIN_DIR . '/view-own-posts-media-only/view-own-posts-media-only.php' );
-
-
- */

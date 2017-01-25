@@ -23,6 +23,37 @@ if ( !class_exists('View_Own_Posts_Media_Only_Patch') )
     define( 'VOPMO_PATCH', 'view-own-posts-media-only-patch' );
     # -------------------------------------  Define Constants OFF   ------------------------------------
 
+    #---------------- Checking plugin dependencies ON  ----------------
+    # Verify if the plugin "View_Own_Posts_Media_Only" is installed
+
+    # Deactivate the current plugin
+    include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
+    
+    if( !is_plugin_active( 'view-own-posts-media-only/view-own-posts-media-only.php' ) ) 
+    {
+        # Deactivate the current plugin
+        deactivate_plugins( plugin_basename( __FILE__ ) );
+
+        # Show an error alert on the admin area
+        add_action( 'admin_notices', function () 
+        {
+            ?>
+            <div class="updated error">
+                <p>
+                    <?php 
+                    _e('El <strong>"View own posts and media library items only - PATCH"</strong> necesita que esté instalado el plugin <strong>"View own posts and media library items only"</strong>', VOPMO_PATCH);
+                    echo '<br>';
+                    _e('<strong>El plugin se ha desactivado</strong>', VOPMO_PATCH); 
+                    ?>
+                </p>
+            </div>
+            <?php
+            if ( isset( $_GET['activate'] ) )
+                unset( $_GET['activate'] );
+        } );
+    }
+    #---------------- Checking plugin dependencies OFF ----------------
+
     # plugin includes
     require_once(VOPMO_PATCH_PLUGIN_DIR . '/includes/class-view-own-posts-media-only-library-patch.php');
 }
