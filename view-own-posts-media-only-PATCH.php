@@ -41,9 +41,9 @@ if ( !class_exists('View_Own_Posts_Media_Only_Patch') )
             <div class="updated error">
                 <p>
                     <?php 
-                    _e('El <strong>"View own posts and media library items only - PATCH"</strong> necesita que esté instalado el plugin <strong>"View own posts and media library items only"</strong>', VOPMO_PATCH);
+                    _e('The plugin <strong>"View own posts and media library items only - PATCH"</strong> needs the plugin <strong>"View own posts and media library items only"</strong> installed and active', VOPMO_PATCH);
                     echo '<br>';
-                    _e('<strong>El plugin se ha desactivado</strong>', VOPMO_PATCH); 
+                    _e('<strong>The plugin has been deactivate it</strong>', VOPMO_PATCH);
                     ?>
                 </p>
             </div>
