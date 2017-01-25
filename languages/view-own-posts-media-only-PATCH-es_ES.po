@@ -1,0 +1,52 @@
+# Copyright (C) 2017 View own posts and media library items only - PATCH
+# This file is distributed under the same license as the View own posts and media library items only - PATCH package.
+msgid ""
+msgstr ""
+"Project-Id-Version: View own posts and media library items only - PATCH "
+"0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/view-own-posts-"
+"media-only-PATCH\n"
+"POT-Creation-Date: 2017-01-25 17:23-0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-01-25 17:56-0400\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.11\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+
+#: view-own-posts-media-only-PATCH.php:44
+msgid ""
+"The plugin <strong>\"View own posts and media library items only - PATCH\"</"
+"strong> needs the plugin <strong>\"View own posts and media library items "
+"only\"</strong> installed and active"
+msgstr ""
+"El plugin <strong>\"View own posts and media library items only - PATCH\"</"
+"strong> necesita al plugin <strong>\"View own posts and media library items "
+"only\"</strong> instalado y activo"
+
+#: view-own-posts-media-only-PATCH.php:46
+msgid "<strong>The plugin has been deactivate it</strong>"
+msgstr "<strong>El plugin ha sido desactivado</strong>"
+
+#. Plugin Name of the plugin/theme
+msgid "View own posts and media library items only - PATCH"
+msgstr "View own posts and media library items only - PATCH"
+
+#. Description of the plugin/theme
+msgid ""
+"The original plugin doesn't work with custom roles. This plugin fix that "
+"problems"
+msgstr ""
+"El plugin original no funciona con roles personalizados. Este plugin "
+"arregla ese problema"
+
+#. Author of the plugin/theme
+msgid "Diego Juliao"
+msgstr "Diego Juliao"
+
+#. Author URI of the plugin/theme
+msgid "http://about.me/dianjuar"
+msgstr "http://about.me/dianjuar"
