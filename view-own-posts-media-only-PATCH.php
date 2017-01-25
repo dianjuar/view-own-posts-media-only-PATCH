@@ -15,16 +15,16 @@ if (!defined('ABSPATH')) {
 }
 
 if ( !class_exists('View_Own_Posts_Media_Only_Patch') ) 
-{	
-	# -------------------------------------  Define Constants ON   -------------------------------------
+{   
+    # -------------------------------------  Define Constants ON   -------------------------------------
     define( 'VOPMO_PATCH_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
     define( 'VOPMO_PATCH_PLUGIN_DIRNAME', plugin_basename(dirname(__FILE__)));
     define( 'VOPMO_PATCH_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
     define( 'VOPMO_PATCH', 'view-own-posts-media-only-PATCH' );
-	# -------------------------------------  Define Constants OFF   ------------------------------------
+    # -------------------------------------  Define Constants OFF   ------------------------------------
 
-	# plugin includes
-	require_once(VOPMO_PATCH_PLUGIN_DIR . '/includes/class-view-own-posts-media-only-library-patch.php');
-	
-	$view_own_posts_media_only_patch = new View_Own_Posts_Media_Only_Patch();
+    # plugin includes
+    require_once(VOPMO_PATCH_PLUGIN_DIR . '/includes/class-view-own-posts-media-only-library-patch.php');
+    
+    $view_own_posts_media_only_patch = new View_Own_Posts_Media_Only_Patch();
 }
