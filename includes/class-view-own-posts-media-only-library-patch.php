@@ -82,6 +82,12 @@ class View_Own_Posts_Media_Only_Patch extends View_Own_Posts_Media_Only
         }
     }
 
+    /**
+     * @overwrite to avoid repeat the submenu page on settings
+     */
+    function create_menu() {
+    }
+
 }# End class
 
     $view_own_posts_media_only_patch = new View_Own_Posts_Media_Only_Patch();
